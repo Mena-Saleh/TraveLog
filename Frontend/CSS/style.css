@@ -8,14 +8,14 @@
 #home{
     height: 100vh;
     background-color: aliceblue ;
-    /* background-image: linear-gradient(rgba(6, 9, 30, 0.6),rgba(3, 9, 30, 0.8)),url(../Images/background1.jpg);
+    background-image: url(../Images/Hiker_back.jpg);
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 nav{
     background-color: #E0DFD5;
     height: 50px;
-    opacity: 0.9;
+    opacity: 0.8;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -65,5 +65,50 @@ nav img{
     background-color: #EE6352;
     border-color: #EE6352;
 }
+
+#home h1{
+    text-align: center;
+    width: 50%;
+    margin-top: 200px;
+    font-size: 72px;
+    color: #EE6352;
+}
+#home p{
+    margin: 20px;
+    margin-left: 5%;
+    color: #373E40;
+    font-size: 22px;
+    width: 40%;
+    text-align: center;
+}
+
+
+
+#home button
+{
+    margin-top: 100px;
+    margin-left: 19%;
+}
+
+.hero-btn{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    color: #FFF;
+    background-color: #EE6352;
+    border: 1px solid #EE6352;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+
+.hero-btn:hover{
+    color:#EE6352;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+
 
 
