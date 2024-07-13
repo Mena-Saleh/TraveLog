@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Home Section and Navigation */
+
+#home {
+    height: 100vh;
+    background-image: url(../Images/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+nav {
+    background-color: #e0dfd5;
+    height: 50px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-links {
+    display: flex;
+    flex-basis: 66%;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+        nav ul li a {
+            color: #373e40;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: #ee6352;
+                transition: 0.3s;
+            }
+
+nav img {
+    width: 180px;
+    height: 50px;
+}
+
+nav i {
+    color: #fff;
+    transform: scale(1.5);
+    right: 0;
+    top: 0;
+    margin: 20px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-btns a {
+    color: #373e40;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-btns button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.nav-btns a:hover button {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.nav-btns a:hover {
+    transition: 0.5s;
+    color: #fff;
+    background-color: #ee6352;
+    border-color: #ee6352;
+}
+
+#home h1 {
+    text-align: center;
+    width: 50%;
+    font-size: 72px;
+    color: #ee6352;
+}
+
+#home p {
+    margin: 50px 0;
+    margin-left: 5%;
+    color: #373e40;
+    font-size: 22px;
+    width: 43%;
+    text-align: center;
+}
+
+#home button {
+    margin-top: 30px;
+    margin-left: 21%;
+}
+
+.hero-btn {
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    color: #fff;
+    background-color: #ee6352;
+    border: 1px solid #ee6352;
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+    .footer h4 {
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+.icons .fa {
+    color: #ee6352;
+    margin: 0 6px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #ee6352;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-btn:hover {
+    color: #ee6352;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+/* World Map */
+
+.section-content h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    font-size: 42px;
+    color: #ee6352;
+}
+
+.section-content p {
+    margin: 50px auto;
+    color: #373e40;
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+}
+
+#countries-toggle {
+    padding: 20px;
+    margin: 30px auto 0px;
+    max-width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    #countries-toggle input {
+        padding: 10px;
+        width: 100%;
+        margin: 20px 50px;
+        cursor: text;
+        outline: none;
+        transition: 0.3s;
+        border-radius: 3px;
+    }
+
+        #countries-toggle input:focus {
+            border: 2px solid #a85950;
+            transition: 0.3s;
+        }
+
+#logger-btns-container {
+    width: 50%;
+    display: flex;
+}
+
+#countries-toggle button {
+    margin: 10px;
+    width: 300px;
+}
+
+#country-name {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-size: 32px;
+    padding: 5px;
+    visibility: hidden;
+    color: #ee6352;
+}
+
+.ag-canvas {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0rem;
+    opacity: 1;
+    transition: opacity 0.5s;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+.ag-canvas_svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin-left: 1rem;
+}
+
+    .ag-canvas_svg path {
+        fill: #383d46;
+        fill-opacity: 1;
+        stroke: #21252b;
+        stroke-opacity: 1;
+        stroke-width: 0.5;
+        transition: 0.3s;
+    }
+
+svg path.visited-country {
+    fill: #ee6352;
+}
+
+.ag-canvas_svg path:hover {
+    fill: #e0dfd5;
+    transition: 0.3s;
+}
+
+/* Explore Destinations */
+
+.carousel-container {
+    position: relative;
+    width: 98%;
+    margin: 20px auto 150px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .carousel-item img {
+        width: 50%;
+        height: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        max-height: 480px;
+        transition: transform 0.5s ease;
+    }
+
+.carousel-info {
+    padding: 20px;
+    width: 50%;
+}
+
+    .carousel-info h2 {
+        margin-top: 0;
+    }
+
+.carousel-container button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .carousel-container button:hover {
+        transition: 0.3s;
+        color: #fff;
+        background-color: #ee6352bb;
+    }
+
+    .carousel-container button.prev {
+        left: 0;
+    }
+
+    .carousel-container button.next {
+        right: 0;
+    }
+
+/*Login and Register pages*/
+
+.login-register-container {
+    height: 100vh;
+    background-image: linear-gradient( rgba(90, 49, 15, 0.6), rgba(15, 82, 110, 0.8) ), url(../Images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .login-register-container form {
+        padding: 40px;
+        backdrop-filter: blur(8px);
+        text-align: center;
+        width: 320px;
+        font-size: 16px;
+        box-shadow: 0px 0px 5px #fff;
+        border-radius: 8px;
+        min-height: 320px;
+    }
+
+        .login-register-container form h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .login-register-container form input[type="text"], .login-register-container form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 30px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 16px;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .login-register-container form input::placeholder {
+            color: #fff;
+        }
+
+        .login-register-container form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .login-register-container form label {
+            color: #fff;
+        }
+
+        .login-register-container form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            margin: 10px auto;
+            border-radius: 30px;
+            background-color: #fff;
+            color: #21252b;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+            .login-register-container form button:hover {
+                background-color: #ee6352;
+                color: #fff;
+            }
+
+        .login-register-container form p {
+            color: white;
+            font-size: 16px;
+        }
+
+
+    .login-register-container label {
+        font-size: 16px;
+    }
+
+    .login-register-container form a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .login-register-container form a:hover {
+            color: #ee6352;
+        }
+
+.text-validation {
+    color: #ee6352;
+    font-weight: 800;
+}
+
+    .text-validation ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .text-validation li {
+        list-style: none;
+    }
+
+/* Responsiveness */
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+
+    #countries-toggle {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    #logger-btns-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+    #countries-toggle button {
+        width: 160px;
+    }
+
+
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 800px) {
+    /* Hamburger Menu */
+
+    nav i {
+        visibility: visible;
+    }
+
+    #curtain-2 {
+        width: 230px;
+        right: -230px;
+        background-color: #3fa7d6;
+    }
+
+    .nav-curtain {
+        position: fixed;
+        height: 100vh;
+        background-color: #e0dfd5;
+        width: 210px;
+        right: -210px;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    nav {
+        opacity: 0.95;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        background-color: #ee6352;
+        width: 200px;
+        right: -200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 70px;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: block;
+        align-items: center;
+        font-size: 20px;
+    }
+
+        nav ul li {
+            display: block;
+            margin: 20px 10px;
+        }
+
+    .nav-btns {
+        margin-top: 50vh;
+        display: flex;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    /* Home Section */
+
+    #home {
+        background-image: linear-gradient( rgba(90, 49, 15, 0.6), rgba(15, 82, 110, 0.8) ), url(../Images/Background_Phone.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+    }
+
+        #home h1 {
+            width: 100%;
+            margin-top: 40%;
+            font-size: 52px;
+        }
+
+        #home p {
+            margin: 20px auto;
+            border-radius: 10px;
+            color: #fff;
+            width: 90%;
+            font-size: 18px;
+            padding: 40px 20px;
+        }
+
+        #home button {
+            margin-top: 60px;
+            margin-left: 0;
+            align-self: center;
+        }
+
+
+    /* World Map */
+
+    .ag-canvas {
+        width: 90%;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        height: auto;
+        padding: 4rem 1rem 1rem;
+    }
+
+    .ag-canvas_svg {
+        max-height: calc(100% - 6rem);
+        margin-left: 0;
+    }
+
+
+    .section-content h2 {
+        font-size: 32px;
+    }
+
+    .section-content p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #countries-toggle {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    #logger-btns-container {
+        width: 100%;
+    }
+
+    #countries-toggle button {
+        width: 160px;
+    }
+
+    #country-name {
+        position: relative;
+        font-size: 18px;
+    }
+
+    /* Explore Destinations */
+
+    .carousel-item {
+        flex-direction: column;
+    }
+
+        .carousel-item img {
+            max-height: 260px;
+            width: 100%;
+        }
+
+    .carousel-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-container button {
+        top: 20%;
+        transform: translateY(50%);
+    }
+
+    /*Login and Register pages*/
+    .login-register-container form {
+        backdrop-filter: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*Login and Register pages*/
+    .login-register-container form {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TraveLog</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <link rel="icon" type="image/x-icon" href="~/Images/Travelog_Icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/lib/toastr/toastr.min.css" />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.7/maps/maps-web.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Navigation and Hero -->
+            <nav>
+                <img src="~/Images/Travelog_Logo.png" alt="logo"/>
+                <i class="fa fa-bars" id="menu-open" onclick="openMenu()"></i>
+                <div class="nav-curtain" id="curtain-2"></div>
+                <div class="nav-curtain"></div>
+                <div class="nav-links">
+                    <i class="fa fa-times" id="menu-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <li>
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li>
+                        <a asp-controller="Home" asp-action="Explore">Explore Destinations</a>
+                        </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <a asp-controller="Home" asp-action="Logger">My Logger</a>
+                        </li>
+                    }
+                    </ul>
+                    @* here *@
+                <partial name="_LoginPartial">
+                </div>
+            </nav>
+    </header>
+    <div class="body-container">
+            @RenderBody()
+    </div>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Our simple app allows travellers to conveniently explore destinations
+            and cherish their adventures.
+        </p>
+        <div class="icons">
+            <a href="https://facebook.com"> <i class="fa fa-facebook"> </i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter"> </i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram"> </i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"> </i> by Mena</p>
+    </section>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

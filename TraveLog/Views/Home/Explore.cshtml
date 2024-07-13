@@ -1,0 +1,84 @@
+﻿@model List<Country>
+
+@{
+    ViewData["Title"] = "Explore";
+}
+
+<!-- Explore Destinations -->
+<section class="section-content">
+    <h2>Explore Destinations</h2>
+    <p>
+        Select a country from the drop down list to check out what amazing
+        destinations it has to offer!
+    </p>
+    <div id="countries-toggle">
+        <input type="text" name="countries" list="countriesList" placeholder="Select a country" id="countrySelect" />
+        <datalist id="countriesList">
+            @foreach (var country in Model)
+            {
+                <option value="@country.Name"></option>
+            }
+        </datalist>
+    </div>
+
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel-slide" id="carouselSlide">
+            @foreach (var country in Model)
+            {
+                foreach (var destination in country.Destinations)
+                {
+                    <div class="carousel-item" data-country="@country.Name">
+                        <img src="~/images/countries/@country.Name/@destination.ImageUrl" alt="@destination.Name" />
+                        <div class="carousel-info">
+                            <h2>@destination.Name</h2>
+                            <p>@destination.Description</p>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+
+<script>
+
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+        const slides = Array.from(document.querySelectorAll(".carousel-item")).filter(slide => slide.style.display === "flex");
+        currentSlide += direction;
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        const offset = -currentSlide * 100;
+        document.querySelector(".carousel-slide").style.transform = `translateX(${offset}%)`;
+    }
+
+    document.getElementById("countrySelect").addEventListener("input", function () {
+        const selectedCountry = this.value;
+        const slides = document.querySelectorAll(".carousel-item");
+
+        slides.forEach(slide => {
+            if (slide.getAttribute("data-country") === selectedCountry) {
+                slide.style.display = "flex";
+            } else {
+                slide.style.display = "none";
+            }
+        });
+
+        // Reset the current slide to 0 when the country is changed
+        currentSlide = 0;
+        document.querySelector(".carousel-slide").style.transform = `translateX(0%)`;
+    });
+
+    // Initially, hide all slides until a country is selected
+    document.querySelectorAll(".carousel-item").forEach(slide => slide.style.display = "none");
+
+</script>
