@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TraveLog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d18042b9144b1367b232b3ad6e04c96bf1ed56a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3e349dce47d3d3c4eb4eab14c40cb8e05d02565")]
 [assembly: System.Reflection.AssemblyProductAttribute("TraveLog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TraveLog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

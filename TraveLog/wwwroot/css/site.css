@@ -247,13 +247,13 @@ html {
     align-items: center;
     position: relative;
     visibility: visible;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    padding: 3rem 0rem;
+    padding-bottom: 2rem;
     opacity: 1;
     transition: opacity 0.5s;
     cursor: pointer;
-    margin: 30px 0px;
+    margin: 30px auto;
 }
 
 .ag-canvas_svg {
