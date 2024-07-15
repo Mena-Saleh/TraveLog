@@ -32,7 +32,7 @@ Log your visited countries and check out which countries you have visited on the
 ## Features
 
 - **ASP.NET Core 8 MVC**: Utilizes the latest ASP.NET Core framework to build a robust and scalable web application.
-- **Identity**: Integrated user authentication and authorization using ASP.NET Core Identity.
+- **Identity**: Integrated user authentication using ASP.NET Core Identity.
 - **Entity Framework Core**: Leveraging EF Core for efficient data access and management.
 - **Toastr Notifications**: Provides real-time notifications to enhance user experience.
 - **Responsive Design**: Ensures the website is accessible and usable on various devices and screen sizes.
