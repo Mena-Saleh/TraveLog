@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\Images\\Background_Phone.jpg"
     },
     {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Australia\\Great Barrier Reef.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Australia\\Great Barrier Reef.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Australia\\Sydney Opera House.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Australia\\Sydney Opera House.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Australia\\Uluru.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Australia\\Uluru.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Brazil\\Christ the Redeemer.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Brazil\\Christ the Redeemer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Brazil\\Iguazu Falls.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Brazil\\Iguazu Falls.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Brazil\\Sugerloaf Mountain.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Brazil\\Sugerloaf Mountain.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Egypt\\Abu simbel Temples.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Egypt\\Abu simbel Temples.jpg"
+    },
+    {
       "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Egypt\\Hatshepsut Temple.jpg",
       "PackagePath": "staticwebassets\\Images\\Countries\\Egypt\\Hatshepsut Temple.jpg"
     },
@@ -25,12 +53,44 @@
       "PackagePath": "staticwebassets\\Images\\Countries\\Egypt\\Pyramids.jpg"
     },
     {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Egypt\\Valley of the Kings.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Egypt\\Valley of the Kings.jpg"
+    },
+    {
       "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\India\\Amber Palace.jpg",
       "PackagePath": "staticwebassets\\Images\\Countries\\India\\Amber Palace.jpg"
     },
     {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\India\\Mysore Palace.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\India\\Mysore Palace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\India\\Qutub Minar.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\India\\Qutub Minar.jpg"
+    },
+    {
       "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\India\\Taj Mahal.jpg",
       "PackagePath": "staticwebassets\\Images\\Countries\\India\\Taj Mahal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Japan\\Kinkakuji.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Japan\\Kinkakuji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Japan\\Mount Fuji.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Japan\\Mount Fuji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Japan\\Tokyo Tower.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Japan\\Tokyo Tower.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Sweden\\Drottninghol Palace.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Sweden\\Drottninghol Palace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Sweden\\Gamla Stan.jpg",
+      "PackagePath": "staticwebassets\\Images\\Countries\\Sweden\\Gamla Stan.jpg"
     },
     {
       "Id": "C:\\Users\\MenaA\\OneDrive\\Desktop\\Active Projects\\TraveLog\\TraveLog\\wwwroot\\Images\\Countries\\Sweden\\Kalmar Castle.jpg",

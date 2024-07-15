@@ -576,7 +576,6 @@
 
     // Get visited countries from the view model
     const visitedCountries = @Html.Raw(visitedCountryNamesJson);
-    console.log(visitedCountries);
 
     function highlightMap() {
         // Remove the "visited-country" class from all paths first
@@ -610,6 +609,7 @@
             body: JSON.stringify(countryName)
         });
         let message = await response.text();
+        console.log(message)
         if (!countryName) toastr.info('Select a country!', 'Info')
         else if (message) toastr.warning(message, 'Warning')
         else {

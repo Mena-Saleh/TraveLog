@@ -74,7 +74,7 @@ namespace TraveLog.Controllers
             }
 
             var country = GetCountryByName(countryName);
-            if (country == null) return NotFound();
+            if (country == null) return BadRequest("Country is not in the database or is not spelled correctly.");
 
             user.VisitedCountries.Add(country);
             await _userManager.UpdateAsync(user);
