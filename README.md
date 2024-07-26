@@ -44,7 +44,7 @@ To run the TraveLog project on your local machine, follow these steps:
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/Mena-Ibrahim/TraveLog.git
+   git clone https://github.com/Mena-Saleh/TraveLog.git
    cd TraveLog
    ```
 
@@ -79,7 +79,7 @@ This project is solely done by me, the author Mena Ashraf.
 
 - **Name**: Mena Ashraf Mikhael Saleh
 - **Email**: [Mena.a.saleh.2001@gmail.com](mailto:Mena.a.saleh.2001@gmail.com)
-- **GitHub**: [https://github.com/Mena-Ibrahim](https://github.com/Mena-Ibrahim)
+- **GitHub**: [https://github.com/Mena-Saleh](https://github.com/Mena-Ibrahim)
 - **LinkedIn**: [https://www.linkedin.com/in/mena-saleh-23b947167/](https://www.linkedin.com/in/mena-saleh-23b947167/)
 
 Thank you for exploring TraveLog! If you have any questions or feedback, feel free to reach out.
